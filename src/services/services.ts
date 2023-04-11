@@ -4,8 +4,8 @@ import {API_KEY_POLYGON} from "./credentials";
 
 const rest = restClient(API_KEY_POLYGON);
 export const USDRUB = "C:USDRUB";
-export const RUBUZS= "C:USDUZS";
-export type OptionType = typeof USDRUB | typeof RUBUZS;
+export const USDUZS= "C:USDUZS";
+export type OptionType = typeof USDRUB | typeof USDUZS;
 
 export const getData = async (option: OptionType): Promise<number> => {
     let USD: number | undefined = 0

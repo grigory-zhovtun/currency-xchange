@@ -2,16 +2,18 @@ import React from 'react';
 
 type CurrencyReportPropsType = {
     nameBank: string
-    nameCurrency: string
-    sellCurrency: number
+    rubToDollar: number
+    uzsToDollar: number
+    uzsToRub: number
 }
 
-const CurrencyReport = ({nameBank, nameCurrency, sellCurrency}: CurrencyReportPropsType) => {
+const CurrencyReport = ({nameBank, rubToDollar, uzsToDollar, uzsToRub}: CurrencyReportPropsType) => {
     return (
         <div>
             <div>{nameBank}</div>
-            <div>{nameCurrency}</div>
-            <div>{sellCurrency}</div>
+            <div>{rubToDollar}</div>
+            <div>{uzsToDollar}</div>
+            <div>{uzsToRub}</div>
         </div>
     );
 };
