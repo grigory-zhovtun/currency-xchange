@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import Input from "../input/Input";
 import CurrencyReport from "../currency-report/CurrencyReport";
 import {getData, USDUZS, USDRUB} from "../services/services";
+import './App.css'
 
 const App = () => {
 
@@ -48,12 +49,19 @@ const App = () => {
 
     return (
         <div>
+            <h3>input count $:</h3>
             <Input callback={inputHandler}/>
-            <CurrencyReport nameBank={"Polygon"}
-                            rubToDollar={usdNum}
-                            uzsToDollar={uzsNum}
-                            uzsToRub={uzsToRub}
-            />
+            <div className="Wrapper">
+                <div className={"title"}>Sourse API</div>
+                <div className={"title"}>RUB to Dollars</div>
+                <div className={"title"}>UZS to Dollars</div>
+                <div className={"title"}>UZS to Rubles</div>
+                <CurrencyReport nameBank={"Polygon"}
+                                rubToDollar={usdNum}
+                                uzsToDollar={uzsNum}
+                                uzsToRub={uzsToRub}
+                />
+            </div>
         </div>
     );
 };

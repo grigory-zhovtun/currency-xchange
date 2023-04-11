@@ -1,4 +1,9 @@
 .Input {
+    margin-left: 50%;
+    transform: translateX(-25%);
+}
+
+input {
     width: 319px;
     height: 66px;
 
@@ -12,4 +17,9 @@
     font-weight: 400;
     font-size: 28px;
     line-height: 34px;
+
+}
+
+input:active {
+    border: none;
 }

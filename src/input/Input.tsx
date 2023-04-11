@@ -12,8 +12,8 @@ const Input = (props: InputPropsType) => {
     }
 
     return (
-        <div>
-            <input className='Input' type={"text"} onChange={onChangeHandler}></input>
+        <div className='Input'>
+            <input type={"text"} onChange={onChangeHandler}></input>
         </div>
     );
 };

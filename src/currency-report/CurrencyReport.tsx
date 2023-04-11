@@ -1,4 +1,5 @@
 import React from 'react';
+import './CurrencyReport.css'
 
 type CurrencyReportPropsType = {
     nameBank: string
@@ -9,12 +10,12 @@ type CurrencyReportPropsType = {
 
 const CurrencyReport = ({nameBank, rubToDollar, uzsToDollar, uzsToRub}: CurrencyReportPropsType) => {
     return (
-        <div>
-            <div>{nameBank}</div>
-            <div>{rubToDollar}</div>
-            <div>{uzsToDollar}</div>
-            <div>{uzsToRub}</div>
-        </div>
+        <>
+            <div className='CurrencyReport'>{nameBank}</div>
+            <div className='CurrencyReport'>{rubToDollar}</div>
+            <div className='CurrencyReport'>{uzsToDollar}</div>
+            <div className='CurrencyReport'>{uzsToRub}</div>
+        </>
     );
 };
 
