@@ -1,4 +1,5 @@
 import React, {ChangeEvent} from 'react';
+import './Input.css'
 
 type InputPropsType = {
     callback: (s: string) => void
@@ -12,7 +13,7 @@ const Input = (props: InputPropsType) => {
 
     return (
         <div>
-            <input type={"text"} onChange={onChangeHandler}></input>
+            <input className='Input' type={"text"} onChange={onChangeHandler}></input>
         </div>
     );
 };
